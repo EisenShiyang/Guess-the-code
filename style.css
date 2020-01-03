@@ -1,0 +1,54 @@
+.top_bar{
+  height: 10vh;
+  background: #D3D3D3;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 45px;
+}
+.top_bar .top_title{
+  margin-left: 15px;
+  display: inline;
+}
+.top_bar .start_btn{
+  float: right;
+  margin-right: 15px;
+}
+.play_area{
+  display: inline;
+}
+.left{
+  width: 50%;
+  float: left;
+}
+.enter_number{
+  padding-top: 70px;
+  padding-left: 30px;
+}
+.enter_number .input-group .enter_area{
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  font-size: 30px;
+}
+.enter_number .submit_btn{
+  padding-top: 45px;
+  padding-left: 37%
+}
+.banned_number{
+  margin-left: 30px;
+  padding-top: 50px;
+}
+.banned_number .btn{
+  border-width: 1px;
+  border-color: black;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+.right{
+  width: 50%;
+  float:right;
+}
+.right .table{
+  text-align: center;
+}

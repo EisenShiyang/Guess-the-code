@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <script src="javascript.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts and icons start-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Fonts and icons end-->
+  </head>
+  <body>
+    <div class="top_bar">
+      <div class="top_title">
+        Guess The Code
+      </div>
+      <div class="start_btn">
+        <i class="fas fa-question-circle fa-sm"></i>
+        <button type="button" class="btn btn-primary btn-lg" id="start_btn" onclick="gamestart()">Start!!</button>
+      </div>
+    </div>
+    <div class="play_area">
+      <div class="left">
+        <div class="enter_number">
+          <div class="row">
+            <div class="col">
+              <div class="input-group">
+                <input type="text" class="enter_area" maxlength="1" id="1_ans" disabled>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group">
+                <input type="text" class="enter_area" maxlength="1" id="2_ans" disabled>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group">
+                <input type="text" class="enter_area" maxlength="1" id="3_ans" disabled>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group">
+                <input type="text" class="enter_area" maxlength="1" id="4_ans" disabled>
+              </div>
+            </div>
+          </div>
+          <div class="submit_btn">
+            <button type="button" class="btn btn-primary btn-lg" onclick="submit_ans()" id="submit_btn" disabled>Submit</button>
+          </div>
+        </div>
+        <br>
+        <hr align="left">
+        <div class="banned_number">
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-default" id="1" onclick="ban_number(1)">1</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="2" onclick="ban_number(2)">2</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="3" onclick="ban_number(3)">3</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="4" onclick="ban_number(4)">4</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="5" onclick="ban_number(5)">5</button>
+            </div>
+            <div class="w-100"></div>
+            <br><br>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="6" onclick="ban_number(6)">6</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="7" onclick="ban_number(7)">7</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="8" onclick="ban_number(8)">8</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="9" onclick="ban_number(9)">9</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-default" id="0" onclick="ban_number(0)">0</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <table class="table table-striped" id="answer_table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Your Answer</th>
+              <th scope="col">Result</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>
