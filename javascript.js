@@ -67,6 +67,7 @@ function game_stop(){
     document.getElementById("start_btn").style.backgroundColor="#007bff";
     document.getElementById("start_btn").innerText="Start!!";
     click_counter = 0;
+    player_tries = 0;
     $('.enter_area').attr('disabled',true);
     $('#submit_btn').attr('disabled',true);
     $("#answer_table tbody").empty();
