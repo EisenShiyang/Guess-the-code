@@ -5,12 +5,13 @@ var answer_not_four = true;
 var click_counter = 0;
 var banned_array = [0,0,0,0,0,0,0,0,0,0];
 var player_answer = [];
-var player_tries = 0;
+var player_tries;
 
 function gamestart(){
   $('.enter_area').attr('disabled',false);
   $('#submit_btn').attr('disabled',false);
   click_counter += 1;
+  player_tries = 0
   if(click_counter % 2 != 0)  {
     do{
       answer_code = Math.floor(Math.random()*10000);
@@ -67,7 +68,6 @@ function game_stop(){
     document.getElementById("start_btn").style.backgroundColor="#007bff";
     document.getElementById("start_btn").innerText="Start!!";
     click_counter = 0;
-    player_tries = 0;
     $('.enter_area').attr('disabled',true);
     $('#submit_btn').attr('disabled',true);
     $("#answer_table tbody").empty();
